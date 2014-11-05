@@ -11,3 +11,16 @@ C:\Users\Justin\documents\visual studio 2012\Projects\ProjectDraft\ProjectDraft\
 C:\Users\Justin\documents\visual studio 2012\Projects\ProjectDraft\ProjectDraft\obj\Debug\ProjectDraft.patientRegistration.resources
 C:\Users\Justin\documents\visual studio 2012\Projects\ProjectDraft\ProjectDraft\obj\Debug\ProjectDraft.appointmentScheduling.resources
 C:\Users\Justin\documents\visual studio 2012\Projects\ProjectDraft\ProjectDraft\obj\Debug\ProjectDraft.patientDatabase.resources
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\bin\Debug\ProjectDraft.exe.config
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.exe
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.pdb
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\bin\Debug\ProjectDraft.exe
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\bin\Debug\ProjectDraft.pdb
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.csprojResolveAssemblyReference.cache
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.appointmentScheduling.resources
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.Login.resources
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.Menu.resources
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.patientDatabase.resources
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.patientRegistration.resources
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.Properties.Resources.resources
+C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.csproj.GenerateResource.Cache
