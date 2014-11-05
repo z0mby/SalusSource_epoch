@@ -30,3 +30,13 @@ C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\
 C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.Properties.Resources.resources
 C:\Users\dabyland4779\Documents\GitHub\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.csproj.GenerateResource.Cache
 >>>>>>> origin/master
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\ProjectDraft\SalusSource_epoch\ProjectDraft\bin\Debug\ProjectDraft.exe
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\ProjectDraft\SalusSource_epoch\ProjectDraft\bin\Debug\ProjectDraft.pdb
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\ProjectDraft\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.csprojResolveAssemblyReference.cache
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\ProjectDraft\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.appointmentScheduling.resources
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\ProjectDraft\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.Login.resources
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\ProjectDraft\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.Menu.resources
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\ProjectDraft\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.patientDatabase.resources
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\ProjectDraft\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.patientRegistration.resources
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\ProjectDraft\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.Properties.Resources.resources
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\ProjectDraft\SalusSource_epoch\ProjectDraft\obj\Debug\ProjectDraft.csproj.GenerateResource.Cache

@@ -36,6 +36,7 @@
             this.scheduleBtn = new System.Windows.Forms.Button();
             this.addPatientbtn = new System.Windows.Forms.Button();
             this.patientDBbtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +52,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.exitBtn);
             this.groupBox1.Controls.Add(this.manualBtn);
             this.groupBox1.Controls.Add(this.reportsBtn);
@@ -121,6 +123,15 @@
             this.patientDBbtn.UseVisualStyleBackColor = true;
             this.patientDBbtn.Click += new System.EventHandler(this.patientDBbtn_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(202, 182);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "test";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,5 +160,6 @@
         private System.Windows.Forms.Button scheduleBtn;
         private System.Windows.Forms.Button addPatientbtn;
         private System.Windows.Forms.Button patientDBbtn;
+        private System.Windows.Forms.Button button1;
     }
 }
