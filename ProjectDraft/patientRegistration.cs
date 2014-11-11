@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -57,6 +58,41 @@ namespace ProjectDraft
         private void firstNametxt_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String firstName = null;
+            String lastName = null;
+            String middleName = null;
+            String sex = null;
+            String ssn = null;
+            String maritalStatus = null;
+            String birthDate = null;
+            String address = null;
+            String phoneNumber = null;
+            String city = null;
+            String state = null;
+            String zip = null;
+            String email = null;
+            String doctor = null;
+            String language = null;
+            String appointmentDate = null;
+            String insuranceProvider = null;
+            String drugAllergies = null;
+            String additionalInfo = null;
+
+            // Connection String
+            String sSQLlTabel = "dbo.PatientManagement";
+            string sSQLConnectionString = "Data Source=JUSTINCOOPER\\SQLEXPRESS;Initial Catalog=PatientManagement;Integrated Security=True";
+            SqlConnection SqlConn = new SqlConnection(sSQLConnectionString);
+
+
+            // Grabbing data from user 
+            firstName = firstNametxt.Text;
+            lastName = lastNametxt.Text;
+            // testing that the value is grabbed
+            MessageBox.Show(firstName);
         }
     }
 }
