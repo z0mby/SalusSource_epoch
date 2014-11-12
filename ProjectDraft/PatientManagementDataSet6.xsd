@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PatientManagementDataSet6" targetNamespace="http://tempuri.org/PatientManagementDataSet6.xsd" xmlns:mstns="http://tempuri.org/PatientManagementDataSet6.xsd" xmlns="http://tempuri.org/PatientManagementDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PatientManagementConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PatientManagementConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProjectDraft.Properties.Settings.GlobalReference.Default.PatientManagementConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PatientMasterTableAdapter" GeneratorDataComponentClassName="PatientMasterTableAdapter" Name="PatientMaster" UserDataComponentName="PatientMasterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PatientManagementConnectionString (Settings)" DbObjectName="PatientManagement.dbo.PatientMaster" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[PatientMaster] WHERE (([recID] = @Original_recID) AND ((@IsNull_patientFirstName = 1 AND [patientFirstName] IS NULL) OR ([patientFirstName] = @Original_patientFirstName)) AND ((@IsNull_patientLastName = 1 AND [patientLastName] IS NULL) OR ([patientLastName] = @Original_patientLastName)) AND ((@IsNull_patientMiddleName = 1 AND [patientMiddleName] IS NULL) OR ([patientMiddleName] = @Original_patientMiddleName)) AND ((@IsNull_patientBirthDate = 1 AND [patientBirthDate] IS NULL) OR ([patientBirthDate] = @Original_patientBirthDate)) AND ((@IsNull_patientPhoneNumber = 1 AND [patientPhoneNumber] IS NULL) OR ([patientPhoneNumber] = @Original_patientPhoneNumber)) AND ((@IsNull_patientState = 1 AND [patientState] IS NULL) OR ([patientState] = @Original_patientState)) AND ((@IsNull_patientStAddress = 1 AND [patientStAddress] IS NULL) OR ([patientStAddress] = @Original_patientStAddress)) AND ((@IsNull_patientEmail = 1 AND [patientEmail] IS NULL) OR ([patientEmail] = @Original_patientEmail)) AND ((@IsNull_patientPhys = 1 AND [patientPhys] IS NULL) OR ([patientPhys] = @Original_patientPhys)) AND ((@IsNull_patientApptDate = 1 AND [patientApptDate] IS NULL) OR ([patientApptDate] = @Original_patientApptDate)) AND ((@IsNull_patientInfo = 1 AND [patientInfo] IS NULL) OR ([patientInfo] = @Original_patientInfo)) AND ((@IsNull_patientSSN = 1 AND [patientSSN] IS NULL) OR ([patientSSN] = @Original_patientSSN)) AND ((@IsNull_patientEmFirstName = 1 AND [patientEmFirstName] IS NULL) OR ([patientEmFirstName] = @Original_patientEmFirstName)) AND ((@IsNull_patientEmLastName = 1 AND [patientEmLastName] IS NULL) OR ([patientEmLastName] = @Original_patientEmLastName)) AND ((@IsNull_patientEmPhoneNumber = 1 AND [patientEmPhoneNumber] IS NULL) OR ([patientEmPhoneNumber] = @Original_patientEmPhoneNumber)) AND ((@IsNull_patientEmStAddress = 1 AND [patientEmStAddress] IS NULL) OR ([patientEmStAddress] = @Original_patientEmStAddress)) AND ((@IsNull_patientInsurance = 1 AND [patientInsurance] IS NULL) OR ([patientInsurance] = @Original_patientInsurance)) AND ((@IsNull_patientSex = 1 AND [patientSex] IS NULL) OR ([patientSex] = @Original_patientSex)) AND ((@IsNull_patientMaritalStatus = 1 AND [patientMaritalStatus] IS NULL) OR ([patientMaritalStatus] = @Original_patientMaritalStatus)) AND ((@IsNull_patientDrugAllergies = 1 AND [patientDrugAllergies] IS NULL) OR ([patientDrugAllergies] = @Original_patientDrugAllergies)) AND ((@IsNull_patientLanguage = 1 AND [patientLanguage] IS NULL) OR ([patientLanguage] = @Original_patientLanguage)) AND ((@IsNull_patientEmState = 1 AND [patientEmState] IS NULL) OR ([patientEmState] = @Original_patientEmState)) AND ((@IsNull_patientZip = 1 AND [patientZip] IS NULL) OR ([patientZip] = @Original_patientZip)) AND ((@IsNull_patientEmZip = 1 AND [patientEmZip] IS NULL) OR ([patientEmZip] = @Original_patientEmZip)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_recID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="recID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientFirstName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientFirstName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientFirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientFirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientLastName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientLastName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientLastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientLastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientMiddleName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientMiddleName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientMiddleName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientMiddleName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientBirthDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientBirthDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientBirthDate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientBirthDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientPhoneNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientPhoneNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientPhoneNumber" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientState" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientState" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientState" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientState" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientStAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientStAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientStAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientStAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientPhys" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientPhys" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientPhys" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientPhys" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientApptDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientApptDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientApptDate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientApptDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientInfo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientInfo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientInfo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientInfo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientSSN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientSSN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientSSN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientSSN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmFirstName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmFirstName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientEmFirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmFirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmLastName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmLastName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientEmLastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmLastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmPhoneNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmPhoneNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientEmPhoneNumber" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmStAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmStAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientEmStAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmStAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientInsurance" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientInsurance" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientInsurance" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientInsurance" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientSex" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientSex" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientSex" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientSex" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientMaritalStatus" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientMaritalStatus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientMaritalStatus" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientMaritalStatus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientDrugAllergies" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientDrugAllergies" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientDrugAllergies" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientDrugAllergies" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientLanguage" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientLanguage" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientLanguage" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientLanguage" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmState" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmState" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_patientEmState" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientEmState" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientZip" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientZip" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_patientZip" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientZip" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmZip" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmZip" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_patientEmZip" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientEmZip" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[PatientMaster] ([patientFirstName], [patientLastName], [patientMiddleName], [patientBirthDate], [patientPhoneNumber], [patientState], [patientStAddress], [patientEmail], [patientPhys], [patientApptDate], [patientInfo], [patientSSN], [patientEmFirstName], [patientEmLastName], [patientEmPhoneNumber], [patientEmStAddress], [patientInsurance], [patientSex], [patientMaritalStatus], [patientDrugAllergies], [patientLanguage], [patientEmState], [patientZip], [patientEmZip]) VALUES (@patientFirstName, @patientLastName, @patientMiddleName, @patientBirthDate, @patientPhoneNumber, @patientState, @patientStAddress, @patientEmail, @patientPhys, @patientApptDate, @patientInfo, @patientSSN, @patientEmFirstName, @patientEmLastName, @patientEmPhoneNumber, @patientEmStAddress, @patientInsurance, @patientSex, @patientMaritalStatus, @patientDrugAllergies, @patientLanguage, @patientEmState, @patientZip, @patientEmZip);
+SELECT recID, patientFirstName, patientLastName, patientMiddleName, patientBirthDate, patientPhoneNumber, patientState, patientStAddress, patientEmail, patientPhys, patientApptDate, patientInfo, patientSSN, patientEmFirstName, patientEmLastName, patientEmPhoneNumber, patientEmStAddress, patientInsurance, patientSex, patientMaritalStatus, patientDrugAllergies, patientLanguage, patientEmState, patientZip, patientEmZip FROM PatientMaster WHERE (recID = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientFirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientFirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientLastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientLastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientMiddleName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientMiddleName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientBirthDate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientBirthDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientPhoneNumber" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientState" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientState" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientStAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientStAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientPhys" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientPhys" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientApptDate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientApptDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientInfo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientInfo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientSSN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientSSN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientEmFirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmFirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientEmLastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmLastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientEmPhoneNumber" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientEmStAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmStAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientInsurance" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientInsurance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientSex" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientSex" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientMaritalStatus" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientMaritalStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientDrugAllergies" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientDrugAllergies" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientLanguage" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientLanguage" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@patientEmState" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientEmState" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@patientZip" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientZip" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@patientEmZip" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientEmZip" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT recID, patientFirstName, patientLastName, patientMiddleName, patientBirthDate, patientPhoneNumber, patientState, patientStAddress, patientEmail, patientPhys, patientApptDate, patientInfo, patientSSN, patientEmFirstName, patientEmLastName, patientEmPhoneNumber, patientEmStAddress, patientInsurance, patientSex, patientMaritalStatus, patientDrugAllergies, patientLanguage, patientEmState, patientZip, patientEmZip FROM dbo.PatientMaster</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[PatientMaster] SET [patientFirstName] = @patientFirstName, [patientLastName] = @patientLastName, [patientMiddleName] = @patientMiddleName, [patientBirthDate] = @patientBirthDate, [patientPhoneNumber] = @patientPhoneNumber, [patientState] = @patientState, [patientStAddress] = @patientStAddress, [patientEmail] = @patientEmail, [patientPhys] = @patientPhys, [patientApptDate] = @patientApptDate, [patientInfo] = @patientInfo, [patientSSN] = @patientSSN, [patientEmFirstName] = @patientEmFirstName, [patientEmLastName] = @patientEmLastName, [patientEmPhoneNumber] = @patientEmPhoneNumber, [patientEmStAddress] = @patientEmStAddress, [patientInsurance] = @patientInsurance, [patientSex] = @patientSex, [patientMaritalStatus] = @patientMaritalStatus, [patientDrugAllergies] = @patientDrugAllergies, [patientLanguage] = @patientLanguage, [patientEmState] = @patientEmState, [patientZip] = @patientZip, [patientEmZip] = @patientEmZip WHERE (([recID] = @Original_recID) AND ((@IsNull_patientFirstName = 1 AND [patientFirstName] IS NULL) OR ([patientFirstName] = @Original_patientFirstName)) AND ((@IsNull_patientLastName = 1 AND [patientLastName] IS NULL) OR ([patientLastName] = @Original_patientLastName)) AND ((@IsNull_patientMiddleName = 1 AND [patientMiddleName] IS NULL) OR ([patientMiddleName] = @Original_patientMiddleName)) AND ((@IsNull_patientBirthDate = 1 AND [patientBirthDate] IS NULL) OR ([patientBirthDate] = @Original_patientBirthDate)) AND ((@IsNull_patientPhoneNumber = 1 AND [patientPhoneNumber] IS NULL) OR ([patientPhoneNumber] = @Original_patientPhoneNumber)) AND ((@IsNull_patientState = 1 AND [patientState] IS NULL) OR ([patientState] = @Original_patientState)) AND ((@IsNull_patientStAddress = 1 AND [patientStAddress] IS NULL) OR ([patientStAddress] = @Original_patientStAddress)) AND ((@IsNull_patientEmail = 1 AND [patientEmail] IS NULL) OR ([patientEmail] = @Original_patientEmail)) AND ((@IsNull_patientPhys = 1 AND [patientPhys] IS NULL) OR ([patientPhys] = @Original_patientPhys)) AND ((@IsNull_patientApptDate = 1 AND [patientApptDate] IS NULL) OR ([patientApptDate] = @Original_patientApptDate)) AND ((@IsNull_patientInfo = 1 AND [patientInfo] IS NULL) OR ([patientInfo] = @Original_patientInfo)) AND ((@IsNull_patientSSN = 1 AND [patientSSN] IS NULL) OR ([patientSSN] = @Original_patientSSN)) AND ((@IsNull_patientEmFirstName = 1 AND [patientEmFirstName] IS NULL) OR ([patientEmFirstName] = @Original_patientEmFirstName)) AND ((@IsNull_patientEmLastName = 1 AND [patientEmLastName] IS NULL) OR ([patientEmLastName] = @Original_patientEmLastName)) AND ((@IsNull_patientEmPhoneNumber = 1 AND [patientEmPhoneNumber] IS NULL) OR ([patientEmPhoneNumber] = @Original_patientEmPhoneNumber)) AND ((@IsNull_patientEmStAddress = 1 AND [patientEmStAddress] IS NULL) OR ([patientEmStAddress] = @Original_patientEmStAddress)) AND ((@IsNull_patientInsurance = 1 AND [patientInsurance] IS NULL) OR ([patientInsurance] = @Original_patientInsurance)) AND ((@IsNull_patientSex = 1 AND [patientSex] IS NULL) OR ([patientSex] = @Original_patientSex)) AND ((@IsNull_patientMaritalStatus = 1 AND [patientMaritalStatus] IS NULL) OR ([patientMaritalStatus] = @Original_patientMaritalStatus)) AND ((@IsNull_patientDrugAllergies = 1 AND [patientDrugAllergies] IS NULL) OR ([patientDrugAllergies] = @Original_patientDrugAllergies)) AND ((@IsNull_patientLanguage = 1 AND [patientLanguage] IS NULL) OR ([patientLanguage] = @Original_patientLanguage)) AND ((@IsNull_patientEmState = 1 AND [patientEmState] IS NULL) OR ([patientEmState] = @Original_patientEmState)) AND ((@IsNull_patientZip = 1 AND [patientZip] IS NULL) OR ([patientZip] = @Original_patientZip)) AND ((@IsNull_patientEmZip = 1 AND [patientEmZip] IS NULL) OR ([patientEmZip] = @Original_patientEmZip)));
+SELECT recID, patientFirstName, patientLastName, patientMiddleName, patientBirthDate, patientPhoneNumber, patientState, patientStAddress, patientEmail, patientPhys, patientApptDate, patientInfo, patientSSN, patientEmFirstName, patientEmLastName, patientEmPhoneNumber, patientEmStAddress, patientInsurance, patientSex, patientMaritalStatus, patientDrugAllergies, patientLanguage, patientEmState, patientZip, patientEmZip FROM PatientMaster WHERE (recID = @recID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientFirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientFirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientLastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientLastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientMiddleName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientMiddleName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientBirthDate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientBirthDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientPhoneNumber" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientState" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientState" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientStAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientStAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientPhys" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientPhys" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientApptDate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientApptDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientInfo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientInfo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientSSN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientSSN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientEmFirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmFirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientEmLastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmLastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientEmPhoneNumber" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientEmStAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmStAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientInsurance" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientInsurance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientSex" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientSex" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientMaritalStatus" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientMaritalStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientDrugAllergies" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientDrugAllergies" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patientLanguage" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientLanguage" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@patientEmState" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientEmState" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@patientZip" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientZip" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@patientEmZip" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientEmZip" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_recID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="recID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientFirstName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientFirstName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientFirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientFirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientLastName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientLastName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientLastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientLastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientMiddleName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientMiddleName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientMiddleName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientMiddleName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientBirthDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientBirthDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientBirthDate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientBirthDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientPhoneNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientPhoneNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientPhoneNumber" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientState" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientState" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientState" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientState" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientStAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientStAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientStAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientStAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientEmail" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientPhys" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientPhys" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientPhys" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientPhys" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientApptDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientApptDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientApptDate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientApptDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientInfo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientInfo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientInfo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientInfo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientSSN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientSSN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientSSN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientSSN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmFirstName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmFirstName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientEmFirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmFirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmLastName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmLastName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientEmLastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmLastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmPhoneNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmPhoneNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientEmPhoneNumber" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmStAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmStAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientEmStAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientEmStAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientInsurance" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientInsurance" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientInsurance" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientInsurance" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientSex" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientSex" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientSex" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientSex" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientMaritalStatus" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientMaritalStatus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientMaritalStatus" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientMaritalStatus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientDrugAllergies" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientDrugAllergies" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientDrugAllergies" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientDrugAllergies" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientLanguage" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientLanguage" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patientLanguage" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patientLanguage" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmState" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmState" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_patientEmState" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientEmState" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientZip" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientZip" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_patientZip" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientZip" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patientEmZip" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patientEmZip" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_patientEmZip" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="patientEmZip" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="recID" ColumnName="recID" DataSourceName="PatientManagement.dbo.PatientMaster" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@recID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="recID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="recID" DataSetColumn="recID" />
+              <Mapping SourceColumn="patientFirstName" DataSetColumn="patientFirstName" />
+              <Mapping SourceColumn="patientLastName" DataSetColumn="patientLastName" />
+              <Mapping SourceColumn="patientMiddleName" DataSetColumn="patientMiddleName" />
+              <Mapping SourceColumn="patientBirthDate" DataSetColumn="patientBirthDate" />
+              <Mapping SourceColumn="patientPhoneNumber" DataSetColumn="patientPhoneNumber" />
+              <Mapping SourceColumn="patientState" DataSetColumn="patientState" />
+              <Mapping SourceColumn="patientStAddress" DataSetColumn="patientStAddress" />
+              <Mapping SourceColumn="patientEmail" DataSetColumn="patientEmail" />
+              <Mapping SourceColumn="patientPhys" DataSetColumn="patientPhys" />
+              <Mapping SourceColumn="patientApptDate" DataSetColumn="patientApptDate" />
+              <Mapping SourceColumn="patientInfo" DataSetColumn="patientInfo" />
+              <Mapping SourceColumn="patientSSN" DataSetColumn="patientSSN" />
+              <Mapping SourceColumn="patientEmFirstName" DataSetColumn="patientEmFirstName" />
+              <Mapping SourceColumn="patientEmLastName" DataSetColumn="patientEmLastName" />
+              <Mapping SourceColumn="patientEmPhoneNumber" DataSetColumn="patientEmPhoneNumber" />
+              <Mapping SourceColumn="patientEmStAddress" DataSetColumn="patientEmStAddress" />
+              <Mapping SourceColumn="patientInsurance" DataSetColumn="patientInsurance" />
+              <Mapping SourceColumn="patientSex" DataSetColumn="patientSex" />
+              <Mapping SourceColumn="patientMaritalStatus" DataSetColumn="patientMaritalStatus" />
+              <Mapping SourceColumn="patientDrugAllergies" DataSetColumn="patientDrugAllergies" />
+              <Mapping SourceColumn="patientLanguage" DataSetColumn="patientLanguage" />
+              <Mapping SourceColumn="patientEmState" DataSetColumn="patientEmState" />
+              <Mapping SourceColumn="patientZip" DataSetColumn="patientZip" />
+              <Mapping SourceColumn="patientEmZip" DataSetColumn="patientEmZip" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PatientManagementDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PatientManagementDataSet6" msprop:Generator_UserDSName="PatientManagementDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PatientMaster" msprop:Generator_TableClassName="PatientMasterDataTable" msprop:Generator_TableVarName="tablePatientMaster" msprop:Generator_TablePropName="PatientMaster" msprop:Generator_RowDeletingName="PatientMasterRowDeleting" msprop:Generator_RowChangingName="PatientMasterRowChanging" msprop:Generator_RowEvHandlerName="PatientMasterRowChangeEventHandler" msprop:Generator_RowDeletedName="PatientMasterRowDeleted" msprop:Generator_UserTableName="PatientMaster" msprop:Generator_RowChangedName="PatientMasterRowChanged" msprop:Generator_RowEvArgName="PatientMasterRowChangeEvent" msprop:Generator_RowClassName="PatientMasterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="recID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnrecID" msprop:Generator_ColumnPropNameInRow="recID" msprop:Generator_ColumnPropNameInTable="recIDColumn" msprop:Generator_UserColumnName="recID" type="xs:int" />
+              <xs:element name="patientFirstName" msprop:Generator_ColumnVarNameInTable="columnpatientFirstName" msprop:Generator_ColumnPropNameInRow="patientFirstName" msprop:Generator_ColumnPropNameInTable="patientFirstNameColumn" msprop:Generator_UserColumnName="patientFirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientLastName" msprop:Generator_ColumnVarNameInTable="columnpatientLastName" msprop:Generator_ColumnPropNameInRow="patientLastName" msprop:Generator_ColumnPropNameInTable="patientLastNameColumn" msprop:Generator_UserColumnName="patientLastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientMiddleName" msprop:Generator_ColumnVarNameInTable="columnpatientMiddleName" msprop:Generator_ColumnPropNameInRow="patientMiddleName" msprop:Generator_ColumnPropNameInTable="patientMiddleNameColumn" msprop:Generator_UserColumnName="patientMiddleName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientBirthDate" msprop:Generator_ColumnVarNameInTable="columnpatientBirthDate" msprop:Generator_ColumnPropNameInRow="patientBirthDate" msprop:Generator_ColumnPropNameInTable="patientBirthDateColumn" msprop:Generator_UserColumnName="patientBirthDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientPhoneNumber" msprop:Generator_ColumnVarNameInTable="columnpatientPhoneNumber" msprop:Generator_ColumnPropNameInRow="patientPhoneNumber" msprop:Generator_ColumnPropNameInTable="patientPhoneNumberColumn" msprop:Generator_UserColumnName="patientPhoneNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientState" msprop:Generator_ColumnVarNameInTable="columnpatientState" msprop:Generator_ColumnPropNameInRow="patientState" msprop:Generator_ColumnPropNameInTable="patientStateColumn" msprop:Generator_UserColumnName="patientState" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientStAddress" msprop:Generator_ColumnVarNameInTable="columnpatientStAddress" msprop:Generator_ColumnPropNameInRow="patientStAddress" msprop:Generator_ColumnPropNameInTable="patientStAddressColumn" msprop:Generator_UserColumnName="patientStAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientEmail" msprop:Generator_ColumnVarNameInTable="columnpatientEmail" msprop:Generator_ColumnPropNameInRow="patientEmail" msprop:Generator_ColumnPropNameInTable="patientEmailColumn" msprop:Generator_UserColumnName="patientEmail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientPhys" msprop:Generator_ColumnVarNameInTable="columnpatientPhys" msprop:Generator_ColumnPropNameInRow="patientPhys" msprop:Generator_ColumnPropNameInTable="patientPhysColumn" msprop:Generator_UserColumnName="patientPhys" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientApptDate" msprop:Generator_ColumnVarNameInTable="columnpatientApptDate" msprop:Generator_ColumnPropNameInRow="patientApptDate" msprop:Generator_ColumnPropNameInTable="patientApptDateColumn" msprop:Generator_UserColumnName="patientApptDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientInfo" msprop:Generator_ColumnVarNameInTable="columnpatientInfo" msprop:Generator_ColumnPropNameInRow="patientInfo" msprop:Generator_ColumnPropNameInTable="patientInfoColumn" msprop:Generator_UserColumnName="patientInfo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientSSN" msprop:Generator_ColumnVarNameInTable="columnpatientSSN" msprop:Generator_ColumnPropNameInRow="patientSSN" msprop:Generator_ColumnPropNameInTable="patientSSNColumn" msprop:Generator_UserColumnName="patientSSN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientEmFirstName" msprop:Generator_ColumnVarNameInTable="columnpatientEmFirstName" msprop:Generator_ColumnPropNameInRow="patientEmFirstName" msprop:Generator_ColumnPropNameInTable="patientEmFirstNameColumn" msprop:Generator_UserColumnName="patientEmFirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientEmLastName" msprop:Generator_ColumnVarNameInTable="columnpatientEmLastName" msprop:Generator_ColumnPropNameInRow="patientEmLastName" msprop:Generator_ColumnPropNameInTable="patientEmLastNameColumn" msprop:Generator_UserColumnName="patientEmLastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientEmPhoneNumber" msprop:Generator_ColumnVarNameInTable="columnpatientEmPhoneNumber" msprop:Generator_ColumnPropNameInRow="patientEmPhoneNumber" msprop:Generator_ColumnPropNameInTable="patientEmPhoneNumberColumn" msprop:Generator_UserColumnName="patientEmPhoneNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientEmStAddress" msprop:Generator_ColumnVarNameInTable="columnpatientEmStAddress" msprop:Generator_ColumnPropNameInRow="patientEmStAddress" msprop:Generator_ColumnPropNameInTable="patientEmStAddressColumn" msprop:Generator_UserColumnName="patientEmStAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientInsurance" msprop:Generator_ColumnVarNameInTable="columnpatientInsurance" msprop:Generator_ColumnPropNameInRow="patientInsurance" msprop:Generator_ColumnPropNameInTable="patientInsuranceColumn" msprop:Generator_UserColumnName="patientInsurance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientSex" msprop:Generator_ColumnVarNameInTable="columnpatientSex" msprop:Generator_ColumnPropNameInRow="patientSex" msprop:Generator_ColumnPropNameInTable="patientSexColumn" msprop:Generator_UserColumnName="patientSex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientMaritalStatus" msprop:Generator_ColumnVarNameInTable="columnpatientMaritalStatus" msprop:Generator_ColumnPropNameInRow="patientMaritalStatus" msprop:Generator_ColumnPropNameInTable="patientMaritalStatusColumn" msprop:Generator_UserColumnName="patientMaritalStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientDrugAllergies" msprop:Generator_ColumnVarNameInTable="columnpatientDrugAllergies" msprop:Generator_ColumnPropNameInRow="patientDrugAllergies" msprop:Generator_ColumnPropNameInTable="patientDrugAllergiesColumn" msprop:Generator_UserColumnName="patientDrugAllergies" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientLanguage" msprop:Generator_ColumnVarNameInTable="columnpatientLanguage" msprop:Generator_ColumnPropNameInRow="patientLanguage" msprop:Generator_ColumnPropNameInTable="patientLanguageColumn" msprop:Generator_UserColumnName="patientLanguage" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientEmState" msprop:Generator_ColumnVarNameInTable="columnpatientEmState" msprop:Generator_ColumnPropNameInRow="patientEmState" msprop:Generator_ColumnPropNameInTable="patientEmStateColumn" msprop:Generator_UserColumnName="patientEmState" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientZip" msprop:Generator_ColumnVarNameInTable="columnpatientZip" msprop:Generator_ColumnPropNameInRow="patientZip" msprop:Generator_ColumnPropNameInTable="patientZipColumn" msprop:Generator_UserColumnName="patientZip" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patientEmZip" msprop:Generator_ColumnVarNameInTable="columnpatientEmZip" msprop:Generator_ColumnPropNameInRow="patientEmZip" msprop:Generator_ColumnPropNameInTable="patientEmZipColumn" msprop:Generator_UserColumnName="patientEmZip" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PatientMaster" />
+      <xs:field xpath="mstns:recID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

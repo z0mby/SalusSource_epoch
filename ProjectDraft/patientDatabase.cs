@@ -18,9 +18,8 @@ namespace ProjectDraft
 
         private void patientDatabase_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'patientManagementDataSet5.PatientMaster' table. You can move, or remove it, as needed.
-            this.patientMasterTableAdapter.Fill(this.patientManagementDataSet5.PatientMaster);
-
+            // TODO: This line of code loads data into the 'patientManagementDataSet6.PatientMaster' table. You can move, or remove it, as needed.
+            this.patientMasterTableAdapter1.Fill(this.patientManagementDataSet6.PatientMaster);
         }
 
         private void fillByToolStripButton_Click(object sender, EventArgs e)

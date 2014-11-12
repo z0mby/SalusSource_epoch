@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.patientInfoGB = new System.Windows.Forms.GroupBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.Calendar = new System.Windows.Forms.MonthCalendar();
             this.insuranceComboBox = new System.Windows.Forms.ComboBox();
             this.insuranceProvidersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.patientManagementDataSet4 = new ProjectDraft.PatientManagementDataSet4();
@@ -76,17 +76,17 @@
             this.firstNametxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.emZiptxt = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.emStatecomboBox = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.emAddresstxt = new System.Windows.Forms.TextBox();
+            this.emPhonetxt = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.emLastNametxt = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.emFirstNametxt = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.doctorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.doctorsTableAdapter = new ProjectDraft.PatientManagementDataSetTableAdapters.DoctorsTableAdapter();
@@ -117,7 +117,7 @@
             // patientInfoGB
             // 
             this.patientInfoGB.Controls.Add(this.label26);
-            this.patientInfoGB.Controls.Add(this.monthCalendar1);
+            this.patientInfoGB.Controls.Add(this.Calendar);
             this.patientInfoGB.Controls.Add(this.insuranceComboBox);
             this.patientInfoGB.Controls.Add(this.label18);
             this.patientInfoGB.Controls.Add(this.label17);
@@ -170,11 +170,11 @@
             this.label26.TabIndex = 39;
             this.label26.Text = "Appointment Date";
             // 
-            // monthCalendar1
+            // Calendar
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(457, 237);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 38;
+            this.Calendar.Location = new System.Drawing.Point(457, 237);
+            this.Calendar.Name = "Calendar";
+            this.Calendar.TabIndex = 38;
             // 
             // insuranceComboBox
             // 
@@ -515,17 +515,17 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.emZiptxt);
             this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.emStatecomboBox);
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.emAddresstxt);
+            this.groupBox2.Controls.Add(this.emPhonetxt);
             this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.emLastNametxt);
             this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.emFirstNametxt);
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Location = new System.Drawing.Point(4, 429);
             this.groupBox2.Name = "groupBox2";
@@ -534,12 +534,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Emergency Contact";
             // 
-            // textBox8
+            // emZiptxt
             // 
-            this.textBox8.Location = new System.Drawing.Point(537, 47);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 11;
+            this.emZiptxt.Location = new System.Drawing.Point(537, 47);
+            this.emZiptxt.Name = "emZiptxt";
+            this.emZiptxt.Size = new System.Drawing.Size(100, 20);
+            this.emZiptxt.TabIndex = 11;
             // 
             // label25
             // 
@@ -550,16 +550,16 @@
             this.label25.TabIndex = 10;
             this.label25.Text = "Zip";
             // 
-            // comboBox1
+            // emStatecomboBox
             // 
-            this.comboBox1.DataSource = this.statesBindingSource;
-            this.comboBox1.DisplayMember = "States";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(400, 47);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.ValueMember = "States";
+            this.emStatecomboBox.DataSource = this.statesBindingSource;
+            this.emStatecomboBox.DisplayMember = "States";
+            this.emStatecomboBox.FormattingEnabled = true;
+            this.emStatecomboBox.Location = new System.Drawing.Point(400, 47);
+            this.emStatecomboBox.Name = "emStatecomboBox";
+            this.emStatecomboBox.Size = new System.Drawing.Size(100, 21);
+            this.emStatecomboBox.TabIndex = 9;
+            this.emStatecomboBox.ValueMember = "States";
             // 
             // label24
             // 
@@ -579,19 +579,19 @@
             this.label23.TabIndex = 7;
             this.label23.Text = "Address";
             // 
-            // textBox6
+            // emAddresstxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(73, 47);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(269, 20);
-            this.textBox6.TabIndex = 6;
+            this.emAddresstxt.Location = new System.Drawing.Point(73, 47);
+            this.emAddresstxt.Name = "emAddresstxt";
+            this.emAddresstxt.Size = new System.Drawing.Size(269, 20);
+            this.emAddresstxt.TabIndex = 6;
             // 
-            // textBox5
+            // emPhonetxt
             // 
-            this.textBox5.Location = new System.Drawing.Point(400, 19);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 5;
+            this.emPhonetxt.Location = new System.Drawing.Point(400, 19);
+            this.emPhonetxt.Name = "emPhonetxt";
+            this.emPhonetxt.Size = new System.Drawing.Size(100, 20);
+            this.emPhonetxt.TabIndex = 5;
             // 
             // label21
             // 
@@ -602,12 +602,12 @@
             this.label21.TabIndex = 4;
             this.label21.Text = "Phone";
             // 
-            // textBox4
+            // emLastNametxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(245, 20);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.emLastNametxt.Location = new System.Drawing.Point(245, 20);
+            this.emLastNametxt.Name = "emLastNametxt";
+            this.emLastNametxt.Size = new System.Drawing.Size(100, 20);
+            this.emLastNametxt.TabIndex = 3;
             // 
             // label20
             // 
@@ -618,12 +618,12 @@
             this.label20.TabIndex = 2;
             this.label20.Text = "Last Name";
             // 
-            // textBox3
+            // emFirstNametxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(73, 20);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 1;
+            this.emFirstNametxt.Location = new System.Drawing.Point(73, 20);
+            this.emFirstNametxt.Name = "emFirstNametxt";
+            this.emFirstNametxt.Size = new System.Drawing.Size(100, 20);
+            this.emFirstNametxt.TabIndex = 1;
             // 
             // label19
             // 
@@ -791,19 +791,19 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox emAddresstxt;
+        private System.Windows.Forms.TextBox emPhonetxt;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox emLastNametxt;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox emFirstNametxt;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox emZiptxt;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox emStatecomboBox;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.MonthCalendar Calendar;
     }
 }

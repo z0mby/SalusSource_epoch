@@ -97,6 +97,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PatientManagementDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PatientManagementDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientManagementDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="patientRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +201,17 @@
     </None>
     <None Include="PatientManagementDataSet5.xss">
       <DependentUpon>PatientManagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PatientManagementDataSet6.xsc">
+      <DependentUpon>PatientManagementDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PatientManagementDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatientManagementDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PatientManagementDataSet6.xss">
+      <DependentUpon>PatientManagementDataSet6.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
