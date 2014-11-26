@@ -123,28 +123,38 @@ namespace ProjectDraft
             emState = emStatecomboBox.SelectedValue.ToString();
             emZip = emZiptxt.Text;
 
-            SqlConn.Open();
-
-            String sInsertSQL = null;
-            sInsertSQL = "INSERT INTO " + sSQLTable + " (patientFirstName, patientLastName, patientMiddleName, patientBirthDate, patientPhoneNumber, patientState, patientStAddress, patientEmail, patientPhys, patientApptDate, patientInfo, patientSSN, patientEmFirstName, patientEmLastName, patientEmPhoneNumber, patientEmStAddress, patientInsurance, patientSex, patientMaritalStatus, patientDrugAllergies, patientLanguage, patientEmState, patientZip, patientEmZip  " + " ) VALUES ('" + firstName + "','" + lastName + "','" + middleName + "','" + birthDate + "','" + phoneNumber + "','" + state + "','" + address + "','" + email + "','" + doctor + "','" + appointmentDate + "','" + additionalInfo + "','" + ssn + "','" + emFirstName + "','" + emLastName + "','" + emPhone + "','" + emAddress + "','" + insuranceProvider + "','"+ sex+ "','"+ maritalStatus + "','" + drugAllergies + "','" + language + "','" + emState+ "','"+ zip + "','" + emZip + "')";
-
-            SqlCommand SqlInsertCmd = new SqlCommand(sInsertSQL, SqlConn);
-
-            SqlInsertCmd.ExecuteNonQuery();
-
-            SqlConn.Close();
 
 
+                SqlConn.Open();
 
+                String sInsertSQL = null;
+                sInsertSQL = "INSERT INTO " + sSQLTable + " (patientFirstName, patientLastName, patientMiddleName, patientBirthDate, patientPhoneNumber, patientState, patientStAddress, patientEmail, patientPhys, patientApptDate, patientInfo, patientSSN, patientEmFirstName, patientEmLastName, patientEmPhoneNumber, patientEmStAddress, patientInsurance, patientSex, patientMaritalStatus, patientDrugAllergies, patientLanguage, patientEmState, patientZip, patientEmZip  " + " ) VALUES ('" + firstName + "','" + lastName + "','" + middleName + "','" + birthDate + "','" + phoneNumber + "','" + state + "','" + address + "','" + email + "','" + doctor + "','" + appointmentDate + "','" + additionalInfo + "','" + ssn + "','" + emFirstName + "','" + emLastName + "','" + emPhone + "','" + emAddress + "','" + insuranceProvider + "','" + sex + "','" + maritalStatus + "','" + drugAllergies + "','" + language + "','" + emState + "','" + zip + "','" + emZip + "')";
+
+                SqlCommand SqlInsertCmd = new SqlCommand(sInsertSQL, SqlConn);
+
+                SqlInsertCmd.ExecuteNonQuery();
+
+                SqlConn.Close();
+
+
+
+                
+
+                this.Close();
+                MessageBox.Show("Success!");
+                Menu menu = new Menu();
+                menu.Show();
 
             
             
-
-            
-            
             
 
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
